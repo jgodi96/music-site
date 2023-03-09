@@ -1,0 +1,23 @@
+.nav-container{
+    display: flex;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    padding:15px;
+    
+  
+  }
+  
+  .nav-group-container{
+    display:flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    gap:5rem;
+  
+    
+    
+  }
+ 
+
+  
