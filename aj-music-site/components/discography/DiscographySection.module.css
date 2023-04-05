@@ -1,0 +1,10 @@
+.discography-container{
+
+    display:flex;
+    height:92vh;
+    align-items: center;
+    flex-direction: column;
+    position:relative;
+    margin-top: 2rem;
+
+}

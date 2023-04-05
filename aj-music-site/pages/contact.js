@@ -1,7 +1,13 @@
+import BlockNav from "@/components/template/BlockNav";
 import React from "react";
-
+import ContactContainer from "@/components/contact/ContactContainer";
 function contact() {
-  return <div>contact</div>;
+  return (
+    <>
+      <BlockNav />
+      <ContactContainer/>
+    </>
+  );
 }
 
 export default contact;

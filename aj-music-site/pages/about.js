@@ -1,7 +1,12 @@
-import React from "react";
-
+import AboutContainer from "../components/about/AboutContainer";
+import BlockNav from "../components/template/BlockNav";
 function about() {
-  return <div>about</div>
+  return (
+    <>
+      <BlockNav />
+      <AboutContainer />
+    </>
+  );
 }
 
-export default about
+export default about;

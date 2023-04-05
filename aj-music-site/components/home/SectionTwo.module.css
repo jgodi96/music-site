@@ -1,0 +1,59 @@
+.section-two-container{
+    display:flex;
+    min-height:100vh;
+    background-color: var(--eggshell);
+    
+    align-items: center;
+    flex-direction: column;
+    gap:4rem;
+  }
+  .platform-container{
+    display:flex;
+    flex-direction: column;
+    gap:10rem;
+    
+  
+  }
+  .sectionTitle{
+    padding-top:3rem;
+   
+  }
+  
+  .recent-album-container{
+    display:flex;
+    gap: 5rem;
+    margin:auto;
+  
+    
+  }
+  
+  .recent-album-info-container{
+    display:flex;
+    flex-direction: column;
+    
+    gap:1.5rem;
+    
+  }
+  .recent-album-title{
+    
+  }
+  .recent-album-artist{
+   
+  }
+  .platform-link {
+    color: black
+  }
+  .btn{
+  
+    color: var(--grey);
+    border: 1px solid var(--grey);
+    align-self: center;
+    padding: 10px 20px
+  }
+  .btncontainer{
+    width:100%;
+    padding:50px;
+    display:flex;
+    justify-content: center;
+    
+  }

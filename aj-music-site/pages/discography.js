@@ -1,9 +1,13 @@
-import React from 'react'
-
+import React from "react";
+import DiscographySection from "../components/discography/DiscographySection";
+import BlockNav from "@/components/template/BlockNav";
 function discography() {
   return (
-    <div>discography</div>
-  )
+    <>
+      <BlockNav />
+      <DiscographySection />
+    </>
+  );
 }
 
-export default discography
+export default discography;

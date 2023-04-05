@@ -1,0 +1,49 @@
+.section-one-container {
+    display:flex;
+    min-height:100vh;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position:relative;
+    text-align: center;
+    
+    
+  }
+  .btn{
+  
+    color: var(--eggshell);
+    border: 1px solid var(--eggshell);
+    align-self: center;
+    padding: 5px 10px
+    
+  }
+  .btncontainer{
+    width:100%;
+    padding:20px;
+    display:flex;
+    justify-content: center;
+  }
+  
+  .down-icon{
+    color:#C8D5B9;
+    height:40px;
+    width:40px;
+    opacity: 50%;
+    animation: 0.5s down-bounce alternate infinite;
+  }
+  @keyframes down-bounce {
+    0% {
+      transform: translatey(-10px);
+    }
+    100% {
+      transform: translatey(1);
+    }
+  }
+  .book-container{
+    color:#FAF3DD;
+    margin: auto;
+    padding-bottom: 7rem;
+    
+  }
+  
+  
