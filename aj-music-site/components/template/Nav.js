@@ -19,7 +19,9 @@ function Nav() {
       <div className={styles["nav-group-container"]}>
         <Link
           className={
-            scroll ? "text-[var(--cambridge-blue)]" : "text-[var(--eggshell)]"
+            scroll
+              ? "text-[var(--cambridge-blue)]"
+              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition"
           }
           href="/"
         >
@@ -27,7 +29,9 @@ function Nav() {
         </Link>
         <Link
           className={
-            scroll ? "text-[var(--cambridge-blue)]" : "text-[var(--eggshell)]"
+            scroll
+              ? "text-[var(--cambridge-blue)]"
+              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition"
           }
           href="/about"
         >
@@ -35,7 +39,9 @@ function Nav() {
         </Link>
         <Link
           className={
-            scroll ? "text-[var(--cambridge-blue)]" : "text-[var(--eggshell)]"
+            scroll
+              ? "text-[var(--cambridge-blue)]"
+              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition"
           }
           href="/contact"
         >
@@ -43,7 +49,9 @@ function Nav() {
         </Link>
         <Link
           className={
-            scroll ? "text-[var(--cambridge-blue)]" : "text-[var(--eggshell)]"
+            scroll
+              ? "text-[var(--cambridge-blue)]"
+              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition"
           }
           href="/discography"
         >
@@ -51,7 +59,9 @@ function Nav() {
         </Link>
         <Link
           className={
-            scroll ? "text-[var(--cambridge-blue)]" : "text-[var(--eggshell)]"
+            scroll
+              ? "text-[var(--cambridge-blue)]"
+              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition"
           }
           href="/book"
         >
@@ -66,7 +76,9 @@ function Nav() {
       <div className={styles["nav-group-container"]}>
         <Link
           className={
-            scroll ? "text-[var(--cambridge-blue)]" : "text-[var(--eggshell)]"
+            scroll
+              ? "text-[var(--cambridge-blue)]"
+              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition"
           }
           href=""
         >
@@ -75,7 +87,9 @@ function Nav() {
 
         <Link
           className={
-            scroll ? "text-[var(--cambridge-blue)]" : "text-[var(--eggshell)]"
+            scroll
+              ? "text-[var(--cambridge-blue)]"
+              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition"
           }
           href=""
         >
@@ -84,7 +98,9 @@ function Nav() {
 
         <Link
           className={
-            scroll ? "text-[var(--cambridge-blue)]" : "text-[var(--eggshell)]"
+            scroll
+              ? "text-[var(--cambridge-blue)]"
+              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition"
           }
           href=""
         >
@@ -92,7 +108,9 @@ function Nav() {
         </Link>
         <Link
           className={
-            scroll ? "text-[var(--cambridge-blue)]" : "text-[var(--eggshell)]"
+            scroll
+              ? "text-[var(--cambridge-blue)]"
+              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition"
           }
           href=""
         >

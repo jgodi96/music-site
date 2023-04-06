@@ -3,15 +3,19 @@ import styles from "./DiscographySection.module.css";
 import Image from "next/image";
 import MicrophoneImage from "../../assets/Microphone.jpg";
 import PluginImage from "../../assets/plugins.jpg";
+import Link from "next/link";
 import InstrumentsImage from "../../assets/instruments.jpg";
 import BlockFooter from "../template/BlockFooter";
 export default function DiscographySection() {
   return (
     <>
       <div className={styles["discography-container"]}>
-        <h2 className="text-center">
-          home / <span className="text-[var(--grey)] ">discography</span>
-        </h2>
+        <div className="flex items-center gap-1 justify-center">
+          <Link className="hover:underline" href="/">
+            home
+          </Link>{" "}
+          <span className="text-[var(--grey)]">/ discography</span>
+        </div>
         <div className="min-w-full mb-[2rem]">
           <div className="self-start min-w-full">
             <h1 className="text-6xl px-10">Popular</h1>

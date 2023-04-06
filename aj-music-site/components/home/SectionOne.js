@@ -35,7 +35,7 @@ function SectionOne() {
           </h3>
           <div className={styles.btncontainer}>
             <Link href="/book">
-              <div className="text-[var(--eggshell)] border p-1 px-2 text-base ">
+              <div className="text-[var(--eggshell)] border p-1 px-2 text-base hover:text-[var(--cambridge-blue)] hover:border-[var(--cambridge-blue)] hover:scale-110 transition active:scale-100 active:opacity-50 ">
                 Book
               </div>
             </Link>

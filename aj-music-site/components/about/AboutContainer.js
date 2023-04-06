@@ -2,14 +2,18 @@ import React from "react";
 import styles from "./AboutContainer.module.css";
 import Slider from "./Slider";
 import BlockFooter from "../template/BlockFooter";
+import Link from "next/link";
 export default function AboutSection() {
   return (
     <>
       <div className={`${styles["about-container"]} mt-[2rem] `}>
         <div>
-          <h2 className="text-center">
-            home / <span className="text-[var(--grey)] ">about</span>
-          </h2>
+        <div className="flex items-center gap-1 justify-center">
+          <Link className="hover:underline" href="/">
+            home
+          </Link>{" "}
+          <span className="text-[var(--grey)]">/ about</span>
+        </div>
           <Slider />
           <h1 className="text-3xl text text-[var(--grey)]  text-center">
             Lead Engineer:{" "}

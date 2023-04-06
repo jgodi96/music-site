@@ -7,6 +7,7 @@ import validate from "../../errors/email-errors";
 import BlockFooter from "../template/BlockFooter";
 import { useAppContext } from "../../context/app-context";
 import styles from "./ContactContainer.module.css";
+import Link from "next/link";
 export default function ContactContainer() {
   const { hideSuccessMessage, showMessage } = useAppContext();
   const form = useRef();
@@ -31,9 +32,12 @@ export default function ContactContainer() {
     <>
       <div className={styles["contact-container"]}>
         <div className={styles["contact-card-container"]}>
-          <h1 className={styles["contact-header"]}>
-            home / <span className="text-[var(--grey)]">contact</span>
-          </h1>
+          <div className="flex items-center gap-1 justify-center">
+            <Link className="hover:underline" href="/">
+              home
+            </Link>{" "}
+            <span className="text-[var(--grey)]">/ contact</span>
+          </div>
           <form
             ref={form}
             onSubmit={handleForm}
