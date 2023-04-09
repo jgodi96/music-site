@@ -18,3 +18,6 @@ export const END_SUCCESS_MESSAGE = "END_SUCCESS_MESSAGE";
 
 export const MOBILE_NAV_SHOW = "MOBILE_NAV_SHOW";
 export const MOBILE_NAV_HIDE = "MOBILE_NAV_HIDE";
+
+export const START_REQUEST = "START_REQUEST";
+export const END_REQUEST = "END_REQUEST";

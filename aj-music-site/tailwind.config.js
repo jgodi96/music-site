@@ -20,7 +20,15 @@ module.exports = {
       "6xl": "3.815rem",
       "7xl": "4.768rem",
     },
-    extend: {},
+   
+    extend: {
+      colors: {
+        egg: "#FAF3DD",
+        cambridge: "#4C7658",
+        gray: "#696D7D",
+        "gray-400": "#6165714b",
+      },
+    },
   },
   plugins: [],
 };

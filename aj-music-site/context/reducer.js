@@ -13,8 +13,16 @@ import {
   END_SUCCESS_MESSAGE,
   MOBILE_NAV_SHOW,
   MOBILE_NAV_HIDE,
+  START_REQUEST,
+  END_REQUEST,
 } from "./actions";
 const reducer = (state, action) => {
+  if (action.type === START_REQUEST) {
+    return { ...state, isSubmitting: true };
+  }
+  if (action.type === END_REQUEST) {
+    return { ...state, isSubmitting: false };
+  }
   if (action.type === MAIN_NAV) {
     return { ...state, isMainNav: true };
   }

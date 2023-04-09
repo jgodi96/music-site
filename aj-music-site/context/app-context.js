@@ -15,6 +15,8 @@ import {
   END_SUCCESS_MESSAGE,
   MOBILE_NAV_HIDE,
   MOBILE_NAV_SHOW,
+  START_REQUEST,
+  END_REQUEST,
 } from "./actions";
 
 const initialState = {
@@ -25,12 +27,21 @@ const initialState = {
   billingInformation: {},
   showMessage: false,
   showMobileNav: false,
+  isSubmitting: false,
 };
 
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
+
+  const startRequest = () => {
+    dispatch({ type: START_REQUEST });
+  };
+
+  const endRequest = () => {
+    dispatch({ type: END_REQUEST });
+  };
 
   const setMainNav = () => {
     dispatch({ type: MAIN_NAV });
@@ -94,6 +105,8 @@ const AppProvider = ({ children }) => {
         hideSuccessMessage,
         showNav,
         hideNav,
+        startRequest,
+        endRequest,
       }}
     >
       {children}

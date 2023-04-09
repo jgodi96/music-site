@@ -20,9 +20,8 @@ body {
   --grey:#696D7D;
   --tea-green:#C8D5B9;
   --cambridge-blue:#4C7658;
- 
-
-  background-color: var(--eggshell);
+  background-color:   var(--eggshell);
+  
 }
 h1{
   

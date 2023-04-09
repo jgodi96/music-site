@@ -10,7 +10,7 @@ const useEmailForm = (validate) => {
     subject: "",
     message: "",
   };
-  const { showSuccessMessage } = useAppContext();
+  const { startRequest, endRequest, showSuccessMessage } = useAppContext();
   const [values, setValues] = useState(initialState);
   const [errors, setErrors] = useState({});
 
@@ -28,10 +28,13 @@ const useEmailForm = (validate) => {
     setErrors(validate(values));
 
     if (Object.keys(getErrors).length === 0) {
-      // sendMessageForm(formCurrent);
-      showSuccessMessage();
-
-      resetValues();
+      startRequest();
+      setTimeout(() => {
+        //sendMessageForm(formCurrent);
+        showSuccessMessage();
+        endRequest();
+        resetValues();
+      }, 1000);
     } else {
       resetValues();
     }

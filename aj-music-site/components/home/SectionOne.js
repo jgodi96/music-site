@@ -27,7 +27,7 @@ function SectionOne() {
           <h1 className="text-[var(--eggshell)] text-5xl">
             Mixed By <span className="text-[var(--cambridge-blue)] ">Aj</span>
           </h1>
-          <h3 className="text-[var(--eggshell)] text-xl">
+          <h3 className="text-egg text-xl">
             Recording. Production, Mixing and Mastering
           </h3>
           <h3 className="text-[var(--eggshell)] text-xl font ">

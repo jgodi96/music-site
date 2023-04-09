@@ -9,7 +9,7 @@ function Nav() {
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 900);
+      setScroll(window.scrollY > 500);
     });
   }, []);
   console.log(scroll);

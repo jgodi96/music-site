@@ -6,6 +6,29 @@ import PluginImage from "../../assets/plugins.jpg";
 import Link from "next/link";
 import InstrumentsImage from "../../assets/instruments.jpg";
 import BlockFooter from "../template/BlockFooter";
+import AlbumDisplay from "./AlbumDisplay";
+
+const projects = [
+  
+  {
+    id: 1,
+    image: InstrumentsImage,
+    title: "Hi",
+    artist: "album1",
+  },
+  {
+    id: 2,
+    image: InstrumentsImage,
+    title: "Hi",
+    artist: "album2",
+  },
+  {
+    id: 3,
+    image: InstrumentsImage,
+    title: "Hi",
+    artist: "album3",
+  },
+];
 export default function DiscographySection() {
   return (
     <>
@@ -17,54 +40,13 @@ export default function DiscographySection() {
           <span className="text-[var(--grey)]">/ discography</span>
         </div>
         <div className="min-w-full mb-[2rem]">
+          {/* ROW 1 POPULAR */}
           <div className="self-start min-w-full">
             <h1 className="text-6xl px-10">Popular</h1>
             <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
-              <div class="group cursor-pointer relative items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-                <div class="h-96 w-72">
-                  <Image
-                    class="h-full w-full object-cover transition-transform duration-500"
-                    src={InstrumentsImage}
-                    placeholder="blur"
-                    quality={100}
-                    fill
-                    style={{
-                      objectFit: "cover",
-                    }}
-                  />
-                </div>
-                <div class="absolute inset-0 bg-gradient-to-b from-transparent  group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-              </div>
-              <div class="group cursor-pointer relative items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-                <div class="h-96 w-72">
-                  <Image
-                    class="h-full w-full object-cover transition-transform duration-500"
-                    src={InstrumentsImage}
-                    placeholder="blur"
-                    quality={100}
-                    fill
-                    style={{
-                      objectFit: "cover",
-                    }}
-                  />
-                </div>
-                <div class="absolute inset-0 bg-gradient-to-b from-transparent  group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-              </div>
-              <div class="group relative items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-                <div class="h-96 w-72">
-                  <Image
-                    class="h-full w-full object-cover transition-transform duration-500"
-                    src={InstrumentsImage}
-                    placeholder="blur"
-                    quality={100}
-                    fill
-                    style={{
-                      objectFit: "cover",
-                    }}
-                  />
-                </div>
-                <div class="absolute inset-0 bg-gradient-to-b from-transparent  group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-              </div>
+              {projects.map((project) => (
+                <AlbumDisplay key={project.id} project={project} />
+              ))}
             </div>
           </div>
 
@@ -72,51 +54,9 @@ export default function DiscographySection() {
           <div className="self-start min-w-full">
             <h1 className="text-6xl px-10">Recent</h1>
             <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
-              <div class="group relative items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-                <div class="h-96 w-72">
-                  <Image
-                    class="h-full w-full object-cover transition-transform duration-500"
-                    src={InstrumentsImage}
-                    placeholder="blur"
-                    quality={100}
-                    fill
-                    style={{
-                      objectFit: "cover",
-                    }}
-                  />
-                </div>
-                <div class="absolute inset-0 bg-gradient-to-b from-transparent  group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-              </div>
-              <div class="group relative items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-                <div class="h-96 w-72">
-                  <Image
-                    class="h-full w-full object-cover transition-transform duration-500"
-                    src={InstrumentsImage}
-                    placeholder="blur"
-                    quality={100}
-                    fill
-                    style={{
-                      objectFit: "cover",
-                    }}
-                  />
-                </div>
-                <div class="absolute inset-0 bg-gradient-to-b from-transparent  group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-              </div>
-              <div class="group relative items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-                <div class="h-96 w-72">
-                  <Image
-                    class="h-full w-full object-cover transition-transform duration-500"
-                    src={InstrumentsImage}
-                    placeholder="blur"
-                    quality={100}
-                    fill
-                    style={{
-                      objectFit: "cover",
-                    }}
-                  />
-                </div>
-                <div class="absolute inset-0 bg-gradient-to-b from-transparent  group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-              </div>
+              {projects.map((project) => (
+                <AlbumDisplay key={project.id} project={project} />
+              ))}
             </div>
           </div>
 
@@ -124,102 +64,18 @@ export default function DiscographySection() {
           <div className="self-start min-w-full">
             <h1 className="text-6xl px-10">Albums</h1>
             <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
-              <div class="group relative items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-                <div class="h-96 w-72">
-                  <Image
-                    class="h-full w-full object-cover transition-transform duration-500"
-                    src={InstrumentsImage}
-                    placeholder="blur"
-                    quality={100}
-                    fill
-                    style={{
-                      objectFit: "cover",
-                    }}
-                  />
-                </div>
-                <div class="absolute inset-0 bg-gradient-to-b from-transparent  group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-              </div>
-              <div class="group relative items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-                <div class="h-96 w-72">
-                  <Image
-                    class="h-full w-full object-cover transition-transform duration-500"
-                    src={InstrumentsImage}
-                    placeholder="blur"
-                    quality={100}
-                    fill
-                    style={{
-                      objectFit: "cover",
-                    }}
-                  />
-                </div>
-                <div class="absolute inset-0 bg-gradient-to-b from-transparent  group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-              </div>
-              <div class="group relative items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-                <div class="h-96 w-72">
-                  <Image
-                    class="h-full w-full object-cover transition-transform duration-500"
-                    src={InstrumentsImage}
-                    placeholder="blur"
-                    quality={100}
-                    fill
-                    style={{
-                      objectFit: "cover",
-                    }}
-                  />
-                </div>
-                <div class="absolute inset-0 bg-gradient-to-b from-transparent  group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-              </div>
+              {projects.map((project) => (
+                <AlbumDisplay key={project.id} project={project} />
+              ))}
             </div>
           </div>
 
           <div className="self-start min-w-full">
             <h1 className="text-6xl px-10">Singles/Eps</h1>
             <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
-              <div class="group relative items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-                <div class="h-96 w-72">
-                  <Image
-                    class="h-full w-full object-cover transition-transform duration-500"
-                    src={InstrumentsImage}
-                    placeholder="blur"
-                    quality={100}
-                    fill
-                    style={{
-                      objectFit: "cover",
-                    }}
-                  />
-                </div>
-                <div class="absolute inset-0 bg-gradient-to-b from-transparent  group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-              </div>
-              <div class="group relative items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-                <div class="h-96 w-72">
-                  <Image
-                    class="h-full w-full object-cover transition-transform duration-500"
-                    src={InstrumentsImage}
-                    placeholder="blur"
-                    quality={100}
-                    fill
-                    style={{
-                      objectFit: "cover",
-                    }}
-                  />
-                </div>
-                <div class="absolute inset-0 bg-gradient-to-b from-transparent  group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-              </div>
-              <div class="group relative items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-                <div class="h-96 w-72">
-                  <Image
-                    class="h-full w-full object-cover transition-transform duration-500"
-                    src={InstrumentsImage}
-                    placeholder="blur"
-                    quality={100}
-                    fill
-                    style={{
-                      objectFit: "cover",
-                    }}
-                  />
-                </div>
-                <div class="absolute inset-0 bg-gradient-to-b from-transparent  group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-              </div>
+              {projects.map((project) => (
+                <AlbumDisplay key={project.id} project={project} />
+              ))}
             </div>
           </div>
         </div>

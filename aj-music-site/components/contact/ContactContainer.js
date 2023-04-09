@@ -7,9 +7,16 @@ import validate from "../../errors/email-errors";
 import BlockFooter from "../template/BlockFooter";
 import { useAppContext } from "../../context/app-context";
 import styles from "./ContactContainer.module.css";
+import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import Modal from "../modal/modal";
+import Spinner from "../spinner/spinner";
+
 export default function ContactContainer() {
-  const { hideSuccessMessage, showMessage } = useAppContext();
+  const close = () => hideSuccessMessage();
+
+  const { hideSuccessMessage, showMessage, isSubmitting } = useAppContext();
+
   const form = useRef();
   const { handleChange, values, handleSubmit, errors } = useEmailForm(
     validate,
@@ -21,15 +28,15 @@ export default function ContactContainer() {
     setTimeout(() => {
       setValue("");
     }, 1000);
-
-    setTimeout(() => {
-      hideSuccessMessage();
-    }, 5000);
   };
   const [value, setValue] = useState("");
   const { name, email, subject, message } = values;
   return (
     <>
+      <AnimatePresence initial={false} mode="wait">
+        {showMessage &&  <Modal handleClose={close}></Modal>}
+      </AnimatePresence>
+
       <div className={styles["contact-container"]}>
         <div className={styles["contact-card-container"]}>
           <div className="flex items-center gap-1 justify-center">
@@ -102,10 +109,16 @@ export default function ContactContainer() {
               {errors.message && (
                 <p className={styles["error-paragraph"]}>{errors.message}</p>
               )}
-              {showMessage && <p>Message Sent Successfully!</p>}
             </div>
 
-            <Button buttonType="contact">Submit</Button>
+            {isSubmitting ? (
+              <Button className="contact" disabled>
+                <Spinner />
+              </Button>
+            ) : (
+              <Button buttonType="contact">Submit</Button>
+            )}
+
             <div className="flex items-center justify-between gap-x-10">
               <div className="flex flex-col items-center justify-center ">
                 <h1>Email</h1>
