@@ -13,7 +13,6 @@ function Nav() {
     });
   }, []);
 
-
   return (
     <div
       className={`${styles["nav-container"]} invisible lg:visible 
@@ -23,12 +22,12 @@ function Nav() {
     
     `}
     >
-      <div className={styles["nav-group-container"]}>
+      <div className={`${styles["nav-group-container"]} animate-fade-in`}>
         <Link
           className={
             scroll
               ? "text-[var(--cambridge-blue)] transition"
-              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition "
+              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition"
           }
           href="/"
         >
@@ -80,7 +79,7 @@ function Nav() {
         <Link href="/"></Link>
       </div>
 
-      <div className={styles["nav-group-container"]}>
+      <div className={`${styles["nav-group-container"]} animate-fade-in`}>
         <Link
           className={
             scroll

@@ -20,22 +20,75 @@ module.exports = {
       "6xl": "3.815rem",
       "7xl": "4.768rem",
     },
-   
+
     extend: {
-       colors: {
+      animationDelay: {
+        1600: "1600ms",
+      },
+      colors: {
+        egg: "#FAF3DD",
+        cambridge: "#4C7658",
+        gray: "#696D7D",
+        "gray-400": "#6165714b",
+      },
+      screens: {
+        two: "1195px",
+        twosm: "1000px",
+      },
 
-      egg: "#FAF3DD",
-      cambridge: "#4C7658",
-      gray: "#696D7D",
-      "gray-400": "#6165714b",
-    },
-    screens: {
-      'two': '1195px',
-      'twosm':'1000px'
-     
-    },
+      keyframes: {
+        leftright: {
+          "0%": {
+            opacity: "0",
+            transform: "translateX(-100px)",
+          },
+          "80%": {
+            transform: "translateX(10px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translate(0)",
+          },
+        },
+        bottomUp: {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(25px)",
+          },
 
+          "100%": {
+            opacity: "1",
+            transform: "translate(0)",
+          },
+        },
+        topBottom: {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(-30px)",
+          },
+
+          "100%": {
+            opacity: "1",
+            transform: "translate(0)",
+          },
+        },
+        fadeIn: {
+          "0%": {
+            opacity: "0",
+          },
+
+          "100%": {
+            opacity: "1",
+          },
+        },
+      },
+      animation: {
+        "left-right": "leftright 1s ease-out forwards",
+        "bottom-up": "bottomUp .5s ease-out forwards",
+        "up-bottom": "topBottom .5s ease-out forwards",
+        "fade-in": "fadeIn .5s ease-out forwards",
+      },
     },
   },
-  plugins: [],
-}
+  plugins: [require("tailwindcss-animation-delay")],
+};

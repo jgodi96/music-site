@@ -29,10 +29,11 @@ function SectionTwo() {
               alt="Album Image"
               style={{
                 objectFit: "contain",
-                width: "100% ",
+
                 position: "relative",
                 height: "unset",
               }}
+              className="max-w-[600px]"
             ></Image>
             <Link href="/discography" className="">
               <div className="absolute w-[72%] h-[15%] top-[50%] -rotate-90 bg-[var(--cambridge-blue)] translate-y-[-50%] left-[-35%] flex items-center justify-center">
@@ -69,7 +70,6 @@ function SectionTwo() {
         <div className="flex max-w-full lg:gap-[10rem] gap-[4rem] twosm:gap-[6rem]">
           <Image
             src={SpotifyImage}
-            className={`${styles["platform-link"]}`}
             style={{
               objectFit: "contain",
               position: "relative",
@@ -84,7 +84,7 @@ function SectionTwo() {
               position: "relative",
               height: "unset",
             }}
-            className="max-w-[20rem]"
+            className="w-full max-w-[13rem]"
           ></Image>
           <Image
             src={SoundCloudImage}
