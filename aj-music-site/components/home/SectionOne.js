@@ -8,24 +8,23 @@ import { IoIosArrowDown } from "react-icons/io";
 function SectionOne() {
   return (
     <>
-      <div>
-        <Image
-          priority
-          class="relative h-full w-full "
-          src={CoverImage}
-          quality={100}
-          fill
-          style={{
-            objectFit: "cover",
-          }}
-        />
-      </div>
-      <div class="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-black"></div>
-
       <section className={styles["section-one-container"]}>
+        <div>
+          <Image
+            priority
+            class="relative h-full w-full "
+            src={CoverImage}
+            quality={100}
+            fill
+            style={{
+              objectFit: "cover",
+            }}
+          />
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-black"></div>
         <div className={styles["book-container"]}>
           <h1 className="text-[var(--eggshell)] text-5xl">
-            Mixed By <span className="text-[var(--cambridge-blue)] ">Aj</span>
+            Mixed By <span className="text-cambridge  ">Aj</span>
           </h1>
           <h3 className="text-egg text-xl">
             Recording. Production, Mixing and Mastering

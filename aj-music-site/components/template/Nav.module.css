@@ -1,12 +1,12 @@
 .nav-container{
     position: fixed;
     top:0;
-    display: flex;
     width:100%;
+    display:flex;
     align-items:center;
     justify-content: center;
     padding:15px;
-    z-index:99;
+    z-index:50;
 
     
   

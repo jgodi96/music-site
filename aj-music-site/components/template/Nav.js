@@ -9,19 +9,26 @@ function Nav() {
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 500);
+      setScroll(window.scrollY > window.innerHeight - 20);
     });
   }, []);
-  console.log(scroll);
+
 
   return (
-    <div className={styles["nav-container"]}>
+    <div
+      className={`${styles["nav-container"]} invisible lg:visible 
+    
+    ${scroll ? "" : ""}
+    
+    
+    `}
+    >
       <div className={styles["nav-group-container"]}>
         <Link
           className={
             scroll
-              ? "text-[var(--cambridge-blue)]"
-              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition"
+              ? "text-[var(--cambridge-blue)] transition"
+              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition "
           }
           href="/"
         >
@@ -30,7 +37,7 @@ function Nav() {
         <Link
           className={
             scroll
-              ? "text-[var(--cambridge-blue)]"
+              ? "text-[var(--cambridge-blue)] transition "
               : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition"
           }
           href="/about"
@@ -40,7 +47,7 @@ function Nav() {
         <Link
           className={
             scroll
-              ? "text-[var(--cambridge-blue)]"
+              ? "text-[var(--cambridge-blue)] transition"
               : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition"
           }
           href="/contact"
@@ -50,7 +57,7 @@ function Nav() {
         <Link
           className={
             scroll
-              ? "text-[var(--cambridge-blue)]"
+              ? "text-[var(--cambridge-blue)] transition"
               : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition"
           }
           href="/discography"
@@ -60,7 +67,7 @@ function Nav() {
         <Link
           className={
             scroll
-              ? "text-[var(--cambridge-blue)]"
+              ? "text-[var(--cambridge-blue)] transition"
               : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition"
           }
           href="/book"
@@ -77,7 +84,7 @@ function Nav() {
         <Link
           className={
             scroll
-              ? "text-[var(--cambridge-blue)]"
+              ? "text-[var(--cambridge-blue)] transition"
               : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition"
           }
           href=""
@@ -88,7 +95,7 @@ function Nav() {
         <Link
           className={
             scroll
-              ? "text-[var(--cambridge-blue)]"
+              ? "text-[var(--cambridge-blue)] transition"
               : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition"
           }
           href=""
@@ -99,7 +106,7 @@ function Nav() {
         <Link
           className={
             scroll
-              ? "text-[var(--cambridge-blue)]"
+              ? "text-[var(--cambridge-blue)] transition"
               : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition"
           }
           href=""
@@ -109,7 +116,7 @@ function Nav() {
         <Link
           className={
             scroll
-              ? "text-[var(--cambridge-blue)]"
+              ? "text-[var(--cambridge-blue)] transition"
               : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition"
           }
           href=""

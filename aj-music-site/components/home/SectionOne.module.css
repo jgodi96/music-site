@@ -1,6 +1,7 @@
 .section-one-container {
     display:flex;
     min-height:100vh;
+    max-width: 100%;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
@@ -43,6 +44,7 @@
     color:#FAF3DD;
     margin: auto;
     padding-bottom: 7rem;
+    z-index: 95;
     
   }
   

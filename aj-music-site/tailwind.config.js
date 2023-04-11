@@ -22,13 +22,20 @@ module.exports = {
     },
    
     extend: {
-      colors: {
-        egg: "#FAF3DD",
-        cambridge: "#4C7658",
-        gray: "#696D7D",
-        "gray-400": "#6165714b",
-      },
+       colors: {
+
+      egg: "#FAF3DD",
+      cambridge: "#4C7658",
+      gray: "#696D7D",
+      "gray-400": "#6165714b",
+    },
+    screens: {
+      'two': '1195px',
+      'twosm':'1000px'
+     
+    },
+
     },
   },
   plugins: [],
-};
+}
