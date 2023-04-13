@@ -30,6 +30,7 @@ module.exports = {
         cambridge: "#4C7658",
         gray: "#696D7D",
         "gray-400": "#6165714b",
+        "tea":"#C8D5B9",
       },
       screens: {
         two: "1195px",
@@ -49,6 +50,11 @@ module.exports = {
             opacity: "1",
             transform: "translate(0)",
           },
+        },
+        carousel:{
+          "100%":{
+            transform:"translateX(-100%)"
+          }
         },
         bottomUp: {
           "0%": {
@@ -87,6 +93,7 @@ module.exports = {
         "bottom-up": "bottomUp .5s ease-out forwards",
         "up-bottom": "topBottom .5s ease-out forwards",
         "fade-in": "fadeIn .5s ease-out forwards",
+        "carousel-start":"carousel 1s linear infinite",
       },
     },
   },

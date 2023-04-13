@@ -21,16 +21,16 @@ const imageVariants = {
 };
 export default function imageContainer() {
   let { scrollYProgress } = useScroll();
-  let x = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
+  let x = useTransform(scrollYProgress, [0, 1], ["-10%", "15%"]);
   return (
     <motion.div
       style={{ x }}
-      className="sm:flex md:flex-row flex-col items-center sm:px-5 max-w-full justify-around"
+      className="sm:flex md:flex-row flex items-center sm:px-5 max-w-full justify-around"
       variants={imageVariants}
       initial="hidden"
       whileInView="visible"
     >
-      <SpotifyImage />
+      <SpotifyImage/>
 
       <SoundCloudImage />
       <AppleImage className="text-center" />

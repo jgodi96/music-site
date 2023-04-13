@@ -5,7 +5,7 @@ import Image from "next/image";
 import CoverImage from "../../assets/troy.jpg";
 
 import { IoIosArrowDown } from "react-icons/io";
-import { motion, useScroll,useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 function SectionOne() {
   let { scrollYProgress } = useScroll();
   let y = useTransform(scrollYProgress, [0, 1], ["0%", "-200%"]);
@@ -26,8 +26,11 @@ function SectionOne() {
         />
 
         <div class="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-black"></div>
-        <motion.div style={{y}} className={styles["primary-heading-container"]}>
-          <h1 className="text-[var(--eggshell)] text-5xl">
+        <motion.div
+          style={{ y }}
+          className={styles["primary-heading-container"]}
+        >
+          <h1 className="text-[var(--eggshell)] text-4xl mt-24 sm:mt-0 sm:text-5xl">
             <span className=" block uppercase tracking-wide animate-bottom-up animation-delay-500 opacity-0">
               Mixed By <span className="text-cambridge  ">Aj</span>{" "}
             </span>
