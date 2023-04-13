@@ -8,11 +8,36 @@ import PluginImage from "../../assets/plugins.jpg";
 import InstrumentsImage from "../../assets/instruments.jpg";
 import Image from "next/image";
 import Footer from "../template/BlockFooter";
+import { motion } from "framer-motion";
+
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+    y: 35,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      duration: 1.5,
+      delay: 0.3,
+    },
+  },
+};
 function SectionThree() {
   return (
     <>
       <div class="relative flex flex-col min-h-screen gap-y-5 bg-[var(--eggshell)] items-center">
-        <h1 class="justify-self-start mt-10 text-5xl font-semibold ">Gear</h1>
+        <motion.h1
+          class="justify-self-start mt-10 text-5xl font-semibold "
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.8 }}
+        >
+          Gear
+        </motion.h1>
         <div class="m-auto">
           <div class="flex items-center justify-center mb-9">
             <div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
