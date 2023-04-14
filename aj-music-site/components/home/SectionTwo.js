@@ -73,11 +73,12 @@ const ButtonVariants = {
 };
 function SectionTwo() {
   let { scrollYProgress } = useScroll();
+  let y1 = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
   let y = useTransform(scrollYProgress, [0, 1], ["0%", "-200%"]);
 
   return (
     <motion.div
-      className={`${styles["section-two-container"]} border border-b-[var(--tea-green)]`}
+      className={`${styles["section-two-container"]} border border-egg border-b-[var(--tea-green)]`}
     >
       <motion.h1
         className="mt-10 text-5xl text-[var(--cambridge-blue)] font-semibold "
@@ -135,7 +136,10 @@ min-height:0"
               </div>
             </motion.div>
           </div>
-          <motion.div className="flex flex-col  mt-[2rem] items-start justify-between lg:text-5xl md:text-5xl text-4xl max-w-full">
+          <motion.div
+            style={{ y: y1 }}
+            className="flex flex-col  items-start justify-between lg:text-5xl md:text-5xl text-4xl max-w-full"
+          >
             <div className="flex-col">
               <h1 className="text-3xl sm:text-5xl">Blond -</h1>
               <h1 className="text-3xl sm:text-5xl">Frank Ocean</h1>
@@ -155,8 +159,9 @@ min-height:0"
         </div>
         <ImageContainer />
       </div>
-      <Link href="/discography" className="mb-[2rem]">
+      <Link href="/discography" className="mb-[4rem]">
         <motion.button
+          style={{ y:y1 }}
           variants={ButtonVariants}
           initial="hidden"
           whileInView="visible"

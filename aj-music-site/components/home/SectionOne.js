@@ -12,7 +12,7 @@ function SectionOne() {
 
   return (
     <>
-      <section className={`${styles["section-one-container"]}`}>
+      <section className={`${styles["section-one-container"]} h-[100svh]`}>
         <Image
           priority
           className="relative"

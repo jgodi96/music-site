@@ -8,9 +8,9 @@ import PluginImage from "../../assets/plugins.jpg";
 import InstrumentsImage from "../../assets/instruments.jpg";
 import Image from "next/image";
 import Footer from "../template/BlockFooter";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
-const containerVariants = {
+const imageVariants = {
   hidden: {
     opacity: 0,
     y: 35,
@@ -26,12 +26,16 @@ const containerVariants = {
   },
 };
 function SectionThree() {
+  let { scrollYProgress } = useScroll();
+  // let y = useTransform(scrollYProgress, [0, 1], ["0%", "-200%"]);
+  let x = useTransform(scrollYProgress, [0, 1], ["30%", "0%"]);
+  let x1 = useTransform(scrollYProgress, [0, 1], ["-30%", "0%"]);
   return (
     <>
       <div class="relative flex flex-col min-h-screen gap-y-5 bg-[var(--eggshell)] items-center">
         <motion.h1
           class="justify-self-start mt-10 text-5xl font-semibold "
-          variants={containerVariants}
+          variants={imageVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.8 }}
@@ -39,7 +43,12 @@ function SectionThree() {
           Gear
         </motion.h1>
         <div class="m-auto">
-          <div class="flex items-center justify-center mb-9">
+          <motion.div
+            variants={imageVariants}
+            initial="hidden"
+            whileInView="visible"
+            class="flex items-center justify-center mb-9"
+          >
             <div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
               <div class="group relative items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
                 <div class="h-96 w-72">
@@ -130,9 +139,14 @@ function SectionThree() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div class="flex items-center justify-center">
+          <motion.div
+            variants={imageVariants}
+            initial="hidden"
+            whileInView="visible"
+            class="flex items-center justify-center"
+          >
             <div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
               <div class="group relative items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
                 <div class="h-96 w-72">
@@ -223,7 +237,7 @@ function SectionThree() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
         <Footer />
       </div>

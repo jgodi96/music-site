@@ -7,30 +7,28 @@ import SoundCloudImage from "../../../assets/soundcloud-logo.svg";
 const imageVariants = {
   hidden: {
     opacity: 0,
-    // y: 35,
+    y: 35,
   },
   visible: {
     opacity: 1,
-    // y: 0,
+    y: 0,
     transition: {
-      // type: "spring",
+      type: "spring",
       duration: 2,
-      delay: 0.5,
+      delay: 1,
     },
   },
 };
 export default function imageContainer() {
-  let { scrollYProgress } = useScroll();
-  let x = useTransform(scrollYProgress, [0, 1], ["-10%", "15%"]);
+ 
   return (
     <motion.div
-      style={{ x }}
       className="sm:flex md:flex-row flex items-center sm:px-5 max-w-full justify-around"
       variants={imageVariants}
       initial="hidden"
       whileInView="visible"
     >
-      <SpotifyImage/>
+      <SpotifyImage />
 
       <SoundCloudImage />
       <AppleImage className="text-center" />

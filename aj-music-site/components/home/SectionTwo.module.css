@@ -1,6 +1,6 @@
 .section-two-container{
     display:flex;
-    min-height:100vh;
+    min-height:100svh;
     max-width: 100%;
     background-color: var(--eggshell);
     
