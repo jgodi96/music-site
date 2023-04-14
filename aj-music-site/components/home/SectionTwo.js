@@ -73,6 +73,7 @@ const ButtonVariants = {
 };
 function SectionTwo() {
   let { scrollYProgress } = useScroll();
+  let ytitle=useTransform(scrollYProgress, [0, 1], ["0%", "-200%"]);
   let y1 = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
   let y = useTransform(scrollYProgress, [0, 1], ["0%", "-200%"]);
 
@@ -81,6 +82,8 @@ function SectionTwo() {
       className={`${styles["section-two-container"]} border border-egg border-b-[var(--tea-green)]`}
     >
       <motion.h1
+      
+   
         className="mt-10 text-5xl text-[var(--cambridge-blue)] font-semibold "
         variants={containerVariants}
         initial="hidden"
@@ -161,7 +164,7 @@ min-height:0"
       </div>
       <Link href="/discography" className="mb-[4rem]">
         <motion.button
-          style={{ y:y1 }}
+          
           variants={ButtonVariants}
           initial="hidden"
           whileInView="visible"

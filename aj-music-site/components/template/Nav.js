@@ -26,8 +26,8 @@ function Nav() {
         <Link
           className={
             scroll
-              ? "text-[var(--cambridge-blue)] transition"
-              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition"
+              ? "text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105"
+              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition active:text-tea active:scale-105"
           }
           href="/"
         >
@@ -36,8 +36,8 @@ function Nav() {
         <Link
           className={
             scroll
-              ? "text-[var(--cambridge-blue)] transition "
-              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition"
+              ? "text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105 "
+              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition active:text-tea active:scale-105"
           }
           href="/about"
         >
@@ -46,8 +46,8 @@ function Nav() {
         <Link
           className={
             scroll
-              ? "text-[var(--cambridge-blue)] transition"
-              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition"
+              ? "text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105"
+              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition active:text-tea active:scale-105"
           }
           href="/contact"
         >
@@ -56,8 +56,8 @@ function Nav() {
         <Link
           className={
             scroll
-              ? "text-[var(--cambridge-blue)] transition"
-              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition"
+              ? "text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105"
+              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition active:text-tea active:scale-105"
           }
           href="/discography"
         >
@@ -66,8 +66,8 @@ function Nav() {
         <Link
           className={
             scroll
-              ? "text-[var(--cambridge-blue)] transition"
-              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition"
+              ? "text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105"
+              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition active:text-tea active:scale-105"
           }
           href="/book"
         >
@@ -83,8 +83,8 @@ function Nav() {
         <Link
           className={
             scroll
-              ? "text-[var(--cambridge-blue)] transition"
-              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition"
+              ? "text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105"
+              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition active:text-tea active:scale-105"
           }
           href=""
         >
@@ -94,8 +94,8 @@ function Nav() {
         <Link
           className={
             scroll
-              ? "text-[var(--cambridge-blue)] transition"
-              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition"
+              ? "text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105"
+              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition active:text-tea active:scale-105"
           }
           href=""
         >
@@ -105,8 +105,8 @@ function Nav() {
         <Link
           className={
             scroll
-              ? "text-[var(--cambridge-blue)] transition"
-              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition"
+              ? "text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105"
+              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition active:text-tea active:scale-105"
           }
           href=""
         >
@@ -115,8 +115,8 @@ function Nav() {
         <Link
           className={
             scroll
-              ? "text-[var(--cambridge-blue)] transition"
-              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition"
+              ? "text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105"
+              : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition active:text-tea active:scale-105"
           }
           href=""
         >

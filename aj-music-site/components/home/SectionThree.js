@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./SectionThree.module.css";
 import DawImage from "../../assets/protools.jpg";
 import HardwareImage from "../../assets/hardware.jpg";
 import CertImage from "../../assets/pro-tools-cert.png";
@@ -25,6 +24,116 @@ const imageVariants = {
     },
   },
 };
+
+const projects = [
+  
+  {
+    id: 1,
+    image: DawImage,
+    title: "Daw",
+    list: [
+      {
+      id: 1,
+      name:"Pro Tools"
+      },
+      {
+        id: 2,
+        name:"Logic Pro X"
+        },
+       
+    ]
+  },
+  {
+    id: 2,
+    image: CertImage,
+    title: "Certificates",
+    list: [
+      {
+      id: 1,
+      name:"Pro Tools Certification"
+      },
+    
+       
+    ]
+  },
+  {
+    id: 3,
+    image: HardwareImage,
+    title: "Hardware",
+    list: [
+      {
+      id: 1,
+      name:"14\" Macbook Pro M1 Pro"
+      },
+      {
+        id: 2,
+        name:"UA Apollo X8"
+        },
+        {
+          id: 3,
+          name:"Scarlett Focusrite 18i20"
+          },
+          {
+            id: 4,
+            name:"Warm Audio WA76"
+            },
+            {
+              id: 5,
+              name:"ART Pro MPA II"
+              },
+              {
+                id: 6,
+                name:"ART Pro VLA II"
+                },
+                {
+                  id: 7,
+                  name:"DBX 266xs"
+                  },
+                  {
+                    id: 8,
+                    name:"Behringer Ultragain Pro"
+                    },
+                    {
+                      id: 9,
+                      name:"Presonus Eris E5"
+                      },
+                      {
+                        id: 10,
+                        name:"Warm Audio TB12 (offsite)"
+                        },
+                        
+                          
+    
+       
+    ]
+  },
+  {
+    id: 4,
+    image: MicrophoneImage,
+    title: "Microphones",
+    list: [
+      {
+      id: 1,
+      name:"Townsend L22/UA DLX"
+      },
+      {
+        id: 2,
+        name:"Warm Audio WA87"
+        },
+        {
+          id: 3,
+          name:"Warm Audio WA47 Jr"
+          },
+          {
+            id: 4,
+            name:"Behringer C2 (pair)"
+            },
+    
+       
+    ]
+  },
+
+];
 function SectionThree() {
   let { scrollYProgress } = useScroll();
   // let y = useTransform(scrollYProgress, [0, 1], ["0%", "-200%"]);
@@ -44,9 +153,7 @@ function SectionThree() {
         </motion.h1>
         <div class="m-auto">
           <motion.div
-            variants={imageVariants}
-            initial="hidden"
-            whileInView="visible"
+         
             class="flex items-center justify-center mb-9"
           >
             <div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
@@ -142,9 +249,6 @@ function SectionThree() {
           </motion.div>
 
           <motion.div
-            variants={imageVariants}
-            initial="hidden"
-            whileInView="visible"
             class="flex items-center justify-center"
           >
             <div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
