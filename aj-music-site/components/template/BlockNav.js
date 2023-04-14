@@ -7,11 +7,11 @@ function BlockNav() {
   return (
     <div className={styles["nav-container"]}>
       <div className="flex w-full items-center justify-center gap-x-20">
-        <Link href="/">home</Link>
-        <Link href="/about">about</Link>
-        <Link href="/contact">contact</Link>
-        <Link href="/discography">discography</Link>
-        <Link href="/book">book</Link>
+        <Link className="text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105" href="/">home</Link>
+        <Link className="text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105" href="/about">about</Link>
+        <Link className="text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105" href="/contact">contact</Link>
+        <Link className="text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105" href="/discography">discography</Link>
+        <Link className="text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105" href="/book">book</Link>
       </div>
 
       <div className={styles["nav-group-container"]}>
@@ -19,18 +19,18 @@ function BlockNav() {
       </div>
 
       <div className="flex w-full items-center justify-center gap-x-20">
-        <Link href="">
+        <Link className="text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105" href="">
           <FaInstagram />
         </Link>
 
-        <Link href="">
+        <Link className="text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105" href="">
           <FaApple />
         </Link>
 
-        <Link href="">
+        <Link className="text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105" href="">
           <FaSpotify />
         </Link>
-        <Link href="">
+        <Link className="text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105" href="">
           <FaSoundcloud />
         </Link>
       </div>

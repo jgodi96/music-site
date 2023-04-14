@@ -44,7 +44,7 @@ function SectionOne() {
 
           <div className={styles.btncontainer}>
             <Link href="/book">
-              <div className="text-[var(--eggshell)] border p-1 px-2 text-base hover:text-[var(--cambridge-blue)] hover:border-[var(--cambridge-blue)] hover:scale-110 transition active:scale-100 active:text-tea active: border-tea animate-fade-in animation-delay-1400 opacity-0 ">
+              <div className="text-[var(--eggshell)] border p-1 px-2 text-base hover:text-[var(--cambridge-blue)] hover:border-[var(--cambridge-blue)] hover:scale-110 transition active:scale-100 active:text-tea active: active:border-tea animate-fade-in animation-delay-1400 opacity-0 ">
                 Book
               </div>
             </Link>
