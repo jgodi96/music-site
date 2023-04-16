@@ -7,8 +7,8 @@ import Link from "next/link";
 export default function BookSection() {
   return (
     <div className={styles["book-section"]}>
-      <div className="text-center">
-        <div className="flex items-center gap-1 justify-center">
+      <div className="flex flex-col items-center justify-around  gap-10">
+        <div className="flex items-center justify-center w-full">
           <Link className="hover:underline" href="/">
             home
           </Link>{" "}

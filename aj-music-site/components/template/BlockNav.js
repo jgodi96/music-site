@@ -5,7 +5,7 @@ import { FaInstagram, FaApple, FaSpotify, FaSoundcloud } from "react-icons/fa";
 
 function BlockNav() {
   return (
-    <div className={styles["nav-container"]}>
+    <div className={`${styles["nav-container"]} invisible lg:visible `}>
       <div className="flex w-full items-center justify-center gap-x-20">
         <Link className="text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105" href="/">home</Link>
         <Link className="text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105" href="/about">about</Link>

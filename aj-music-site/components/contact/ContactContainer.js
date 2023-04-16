@@ -38,7 +38,7 @@ export default function ContactContainer() {
       </AnimatePresence>
 
       <div className={styles["contact-container"]}>
-        <div className={styles["contact-card-container"]}>
+        <div className={`${styles["contact-card-container"]}`}>
           <div className="flex items-center gap-1 justify-center">
             <Link className="hover:underline" href="/">
               home
@@ -48,7 +48,7 @@ export default function ContactContainer() {
           <form
             ref={form}
             onSubmit={handleForm}
-            className={styles["contact-card"]}
+            className={`${styles["contact-card"]} sm:border border-gray`}
           >
             <InputRow>
               <InputColumn>

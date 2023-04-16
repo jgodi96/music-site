@@ -7,11 +7,11 @@ import SoundCloudImage from "../../../assets/soundcloud-logo.svg";
 const imageVariants = {
   hidden: {
     opacity: 0,
-    y: 35,
+   
   },
   visible: {
     opacity: 1,
-    y: 0,
+   
     transition: {
       type: "spring",
       duration: 2,
