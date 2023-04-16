@@ -39,10 +39,10 @@ export default function DiscographySection() {
           </Link>{" "}
           <span className="text-[var(--grey)]">/ discography</span>
         </div>
-        <div className="min-w-full mb-[2rem]">
+        <div className="max-w-full mb-[2rem]">
           {/* ROW 1 POPULAR */}
-          <div className="self-start min-w-full">
-            <h1 className="text-6xl px-10">Popular</h1>
+          <div className="self-start max-w-full">
+            <h1 className="text-5xl px-5 sm:text-6xl sm:px-10">Popular</h1>
             <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
               {projects.map((project) => (
                 <AlbumDisplay key={project.id} project={project} />
@@ -51,8 +51,8 @@ export default function DiscographySection() {
           </div>
 
           {/* ROW 2 RECENT */}
-          <div className="self-start min-w-full">
-            <h1 className="text-6xl px-10">Recent</h1>
+          <div className="self-start max-w-full">
+            <h1 className="text-5xl px-5 sm:text-6xl sm:px-10">Recent</h1>
             <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
               {projects.map((project) => (
                 <AlbumDisplay key={project.id} project={project} />
@@ -61,8 +61,8 @@ export default function DiscographySection() {
           </div>
 
           {/* ROW 2 Albums */}
-          <div className="self-start min-w-full">
-            <h1 className="text-6xl px-10">Albums</h1>
+          <div className="self-start max-w-full">
+            <h1 className="text-5xl px-5 sm:text-6xl sm:px-10">Albums</h1>
             <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
               {projects.map((project) => (
                 <AlbumDisplay key={project.id} project={project} />
@@ -70,8 +70,8 @@ export default function DiscographySection() {
             </div>
           </div>
 
-          <div className="self-start min-w-full">
-            <h1 className="text-6xl px-10">Singles/Eps</h1>
+          <div className="self-start max-w-full">
+            <h1 className="text-5xl px-5 sm:text-6xl sm:px-10">Singles/Eps</h1>
             <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
               {projects.map((project) => (
                 <AlbumDisplay key={project.id} project={project} />
