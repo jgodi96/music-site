@@ -48,20 +48,20 @@ export default function BlockFooter() {
       <div className=" gap-y-5 p-5 flex flex-col justify-center">
         <h1 className="text-[var(--cambridge-blue)]">Follow</h1>
         <div className="flex gap-5">
-          <Link href="">
+          <a target="_blank" href="https://instagram.com/ajb.wav">
             <FaInstagram className="text-[var(--cambridge-blue)] hover:scale-110 transition" />
-          </Link>
+          </a>
 
-          <Link href="">
+          <a target="_blank" href="https://music.apple.com/us/artist/ajb/1450461310">
             <FaApple className="text-[var(--cambridge-blue)] hover:scale-110 transition" />
-          </Link>
+          </a>
 
-          <Link href="">
+          <a target="_blank" href="https://open.spotify.com/artist/6wRvKLScKzXeUIVNEe2Sdb?si=dH_2p566R_mhIBWDzpAbig">
             <FaSpotify className="text-[var(--cambridge-blue)] hover:scale-110 transition" />
-          </Link>
-          <Link href="">
+          </a>
+          <a target="_blank" href="https://open.spotify.com/artist/6wRvKLScKzXeUIVNEe2Sdb?si=dH_2p566R_mhIBWDzpAbig">
             <FaSoundcloud className="text-[var(--cambridge-blue)] hover:scale-110 transition" />
-          </Link>
+          </a>
         </div>
       </div>
     </div>

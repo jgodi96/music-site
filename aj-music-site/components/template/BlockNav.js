@@ -19,20 +19,20 @@ function BlockNav() {
       </div>
 
       <div className="flex w-full items-center justify-center gap-x-20">
-        <Link className="text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105" href="">
+        <a target="_blank" className="text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105" href="https://instagram.com/ajb.wav">
           <FaInstagram />
-        </Link>
+        </a>
 
-        <Link className="text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105" href="">
+        <a target="_blank" className="text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105" href="https://music.apple.com/us/artist/ajb/1450461310">
           <FaApple />
-        </Link>
+        </a>
 
-        <Link className="text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105" href="">
+        <a target="_blank" className="text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105" href="https://open.spotify.com/artist/6wRvKLScKzXeUIVNEe2Sdb?si=dH_2p566R_mhIBWDzpAbig">
           <FaSpotify />
-        </Link>
-        <Link className="text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105" href="">
+        </a>
+        <a target="_blank" className="text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105" href="https://open.spotify.com/artist/6wRvKLScKzXeUIVNEe2Sdb?si=dH_2p566R_mhIBWDzpAbig">
           <FaSoundcloud />
-        </Link>
+        </a>
       </div>
     </div>
   );

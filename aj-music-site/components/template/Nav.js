@@ -80,48 +80,49 @@ function Nav() {
       </div>
 
       <div className={`${styles["nav-group-container"]} animate-fade-in`}>
-        <Link
+        <a target="_blank"
           className={
             scroll
               ? "text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105"
               : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition active:text-tea active:scale-105"
           }
-          href=""
+          href="https://instagram.com/ajb.wav"
         >
           <FaInstagram />
-        </Link>
+        </a>
 
-        <Link
+        <a target="_blank"
           className={
             scroll
               ? "text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105"
               : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition active:text-tea active:scale-105"
           }
-          href=""
+          
+          href="https://music.apple.com/us/artist/ajb/1450461310"
         >
           <FaApple />
-        </Link>
+        </a>
 
-        <Link
+        <a target="_blank"
           className={
             scroll
               ? "text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105"
               : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition active:text-tea active:scale-105"
           }
-          href=""
+          href="https://open.spotify.com/artist/6wRvKLScKzXeUIVNEe2Sdb?si=dH_2p566R_mhIBWDzpAbig"
         >
           <FaSpotify />
-        </Link>
-        <Link
+        </a>
+        <a target="_blank"
           className={
             scroll
               ? "text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105"
               : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition active:text-tea active:scale-105"
           }
-          href=""
+          href="https://open.spotify.com/artist/6wRvKLScKzXeUIVNEe2Sdb?si=dH_2p566R_mhIBWDzpAbig"
         >
           <FaSoundcloud />
-        </Link>
+        </a>
       </div>
     </div>
   );

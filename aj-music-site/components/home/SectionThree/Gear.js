@@ -1,8 +1,30 @@
 import React from 'react'
+import Image from 'next/image'
+import {motion} from 'framer-motion'
 
-export default function Gear({image,title,list}) {
+
+const imageVariants = {
+  hidden: {
+    opacity: 0,
+    y: 35,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      duration: 1.5,
+      delay: 0.3,
+    },
+  },
+};
+export default function Gear({image,title,list,rem}) {
   return (
-    <div class="group relative items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+    <motion.div 
+     variants={imageVariants}
+        initial="hidden"
+        whileInView="visible"
+    class="group relative items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
     <div class="h-96 w-72">
       {/* <img
         class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
@@ -25,14 +47,14 @@ export default function Gear({image,title,list}) {
       <h1 class="font-dmserif text-3xl font-bold text-[var(--eggshell)]">
         {title}
       </h1>
-      <div class="mb-[13.5rem]  text-lg italic text-[var(--eggshell)] opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+      <div className={`mb-[${rem}]  text-lg italic text-[var(--eggshell)] opacity-0 transition-opacity duration-300 group-hover:opacity-100`}>
         <ul>
-          {list.map(list)=>{
-
-          }}
+          {list.map((gear)=><li key={gear.id}>{gear.name}</li>)
+            
+          }
         </ul>
       </div>
     </div>
-  </div>
+  </motion.div>
   )
 }
