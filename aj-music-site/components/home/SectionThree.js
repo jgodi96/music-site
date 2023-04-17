@@ -29,10 +29,10 @@ const imageVariants = {
 const gear = [
   
   {
-    id: 1,
+    id: '1',
     image: DawImage,
     title: "Daw",
-    rem: '13.5rem',
+  
     list: [
       {
       id: 1,
@@ -49,7 +49,7 @@ const gear = [
     id: 2,
     image: CertImage,
     title: "Certificates",
-    rem:'15rem',
+
     list: [
       {
       id: 1,
@@ -63,7 +63,7 @@ const gear = [
     id: 3,
     image: HardwareImage,
     title: "Hardware",
-    rem:'0',
+ 
     list: [
       {
       id: 1,
@@ -115,7 +115,7 @@ const gear = [
     id: 4,
     image: MicrophoneImage,
     title: "Microphones",
-    rem:'11rem',
+   
     list: [
       {
       id: 1,
@@ -141,7 +141,7 @@ const gear = [
     id: 5,
     image: PluginImage,
     title: "Plugins",
-    rem:'2rem',
+  
     list: [
       {
       id: 1,
@@ -179,7 +179,7 @@ const gear = [
     id: 6,
     image: InstrumentsImage,
     title: "Instruments",
-    rem:'9.5rem',
+
     list: [
       {
       id: 1,
