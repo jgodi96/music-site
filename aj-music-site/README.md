@@ -1,17 +1,16 @@
 # Music Business
-Try it at https://music-site-psi.vercel.app/<br /> A front-end template for a long beach clothing website  <br /> You are able to simulate a user that will want to create an account, add items to a shopping cart, and checkout. No clothing will be purchased since this is a template but user information will be sent to firebase.
+Try it at https://music-site-psi.vercel.app/<br /> A Static 5 Page Music Business Website for client <br /> You are able to view music and book a session with the client. In Progress
 
 # What I Used
-* React js
-* React Router
-* Custom Hooks
-* React Hooks
-* Redux
-* FireBase
-* html/css
+* Next Js
+* Javascript
+* Npm
+* Tailwind
+* Framer Motion
+* Html/CSS
 
 # How I will improve this site
-* Add a backend using Node Js, Mongo Db, and Express
-* Manage Payments
-* Add shipping functionality
+* Complete with assets and images given by client
+* Add a CMS preferably STRAPI
+
 
