@@ -16,8 +16,8 @@ export default function AboutSection() {
         </div>
           <Slider />
           <h1 className="text-3xl text text-[var(--grey)]  text-center">
-            Lead Engineer:{" "}
-            <span className="text-[var(--cambridge-blue)]">AJ</span>
+            Lead Producer:{" "}
+            <span className="text-[var(--cambridge-blue)]">Jdgodi</span>
           </h1>
           <div className="flex justify-center items-center">
             <p className="text-2xl text my-[2rem] text-[var(--grey)] max-w-[50ch] px-5">

@@ -5,8 +5,8 @@ export default function BlockFooter() {
   return (
     <div className="flex flex-wrap border border-[var(--eggshell)] border-t-gray-400 min-w-[95%] justify-between">
       <div className=" gap-y-5 p-5 flex flex-col justify-center">
-        <h1 className="text-[var(--cambridge-blue)]">Mixed By AJ</h1>
-        <h1 className="text-[var(--cambridge-blue)]">@2023, AJ</h1>
+        <h1 className="text-[var(--cambridge-blue)]">Jdgodi</h1>
+        <h1 className="text-[var(--cambridge-blue)]">@2025, Jdgodi</h1>
       </div>
 
       <div className=" gap-y-5 p-5 flex flex-col justify-center">
@@ -48,18 +48,18 @@ export default function BlockFooter() {
       <div className=" gap-y-5 p-5 flex flex-col justify-center">
         <h1 className="text-[var(--cambridge-blue)]">Follow</h1>
         <div className="flex gap-5">
-          <a target="_blank" href="https://instagram.com/ajb.wav">
+          <a target="_blank" href="/">
             <FaInstagram className="text-[var(--cambridge-blue)] hover:scale-110 transition" />
           </a>
 
-          <a target="_blank" href="https://music.apple.com/us/artist/ajb/1450461310">
+          <a target="_blank" href="/">
             <FaApple className="text-[var(--cambridge-blue)] hover:scale-110 transition" />
           </a>
 
-          <a target="_blank" href="https://open.spotify.com/artist/6wRvKLScKzXeUIVNEe2Sdb?si=dH_2p566R_mhIBWDzpAbig">
+          <a target="_blank" href="/">
             <FaSpotify className="text-[var(--cambridge-blue)] hover:scale-110 transition" />
           </a>
-          <a target="_blank" href="https://open.spotify.com/artist/6wRvKLScKzXeUIVNEe2Sdb?si=dH_2p566R_mhIBWDzpAbig">
+          <a target="_blank" href="/">
             <FaSoundcloud className="text-[var(--cambridge-blue)] hover:scale-110 transition" />
           </a>
         </div>

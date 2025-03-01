@@ -86,7 +86,7 @@ function Nav() {
               ? "text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105"
               : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition active:text-tea active:scale-105"
           }
-          href="https://instagram.com/ajb.wav"
+          href="/"
         >
           <FaInstagram />
         </a>
@@ -98,7 +98,7 @@ function Nav() {
               : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition active:text-tea active:scale-105"
           }
           
-          href="https://music.apple.com/us/artist/ajb/1450461310"
+          href="/"
         >
           <FaApple />
         </a>
@@ -109,7 +109,7 @@ function Nav() {
               ? "text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105"
               : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition active:text-tea active:scale-105"
           }
-          href="https://open.spotify.com/artist/6wRvKLScKzXeUIVNEe2Sdb?si=dH_2p566R_mhIBWDzpAbig"
+          href="/"
         >
           <FaSpotify />
         </a>
@@ -119,7 +119,7 @@ function Nav() {
               ? "text-[var(--cambridge-blue)] hover:scale-110   transition active:text-tea active:scale-105"
               : "text-[var(--eggshell)] hover:text-[var(--cambridge-blue)] hover:scale-110 transition active:text-tea active:scale-105"
           }
-          href="https://open.spotify.com/artist/6wRvKLScKzXeUIVNEe2Sdb?si=dH_2p566R_mhIBWDzpAbig"
+          href="/"
         >
           <FaSoundcloud />
         </a>

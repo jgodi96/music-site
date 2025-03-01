@@ -32,22 +32,18 @@ function SectionOne() {
         >
           <h1 className="text-[var(--eggshell)] text-4xl mt-24 sm:mt-0 sm:text-5xl">
             <span className=" block uppercase tracking-wide animate-bottom-up animation-delay-500 opacity-0">
-              Mixed By <span className="text-cambridge  ">Aj</span>{" "}
+             <span className="text-cambridge  ">Jdgodi</span>{" "}
             </span>
             <span className="text-egg text-xl block animate-bottom-up animation-delay-800 opacity-0">
-              Recording, Production, Mixing and Mastering
+              Single Coming Soon
             </span>
             <span className="text-egg text-xl block animate-bottom-up animation-delay-800 opacity-0">
-              San Diego, California
+              Long Beach, CA
             </span>
           </h1>
 
           <div className={styles.btncontainer}>
-            <Link href="/book">
-              <div className="text-[var(--eggshell)] border p-1 px-2 text-base hover:text-[var(--cambridge-blue)] hover:border-[var(--cambridge-blue)] hover:scale-110 transition active:scale-100 active:text-tea active: active:border-tea animate-fade-in animation-delay-1400 opacity-0 ">
-                Book
-              </div>
-            </Link>
+           
           </div>
         </motion.div>
         <div className="animate-up-bottom animation-delay-2000 opacity-0">
