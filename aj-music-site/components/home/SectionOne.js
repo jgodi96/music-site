@@ -40,6 +40,9 @@ function SectionOne() {
             <span className="text-egg text-xl block animate-bottom-up animation-delay-800 opacity-0">
               Long Beach, CA
             </span>
+            <span className="text-red-600 text-xl block animate-bottom-up animation-delay-800 opacity-0">
+              *Website in development - Coming Soon*
+            </span>
           </h1>
 
           <div className={styles.btncontainer}>
