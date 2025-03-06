@@ -18,18 +18,18 @@ export default function MobileNavBar({click}) {
 
         <div className='flex items-center max-w-full justify-around gap-5' >
 
-        <a target="_blank" href="https://instagram.com/ajb.wav" onClick={click}>
+        <a target="_blank" href="/" onClick={click}>
             <FaInstagram className="text-egg text-4xl hover:scale-110 transition" />
           </a>
 
-          <a target="_blank" href="https://music.apple.com/us/artist/ajb/1450461310" onClick={click}>
+          <a target="_blank" href="/" onClick={click}>
             <FaApple className="text-egg text-4xl hover:scale-110 transition" />
           </a>
 
-          <a target="_blank" href="https://open.spotify.com/artist/6wRvKLScKzXeUIVNEe2Sdb?si=dH_2p566R_mhIBWDzpAbig" onClick={click}>
+          <a target="_blank" href="/" onClick={click}>
             <FaSpotify className="text-egg text-4xl hover:scale-110 transition" />
           </a>
-          <a target="_blank" href="https://open.spotify.com/artist/6wRvKLScKzXeUIVNEe2Sdb?si=dH_2p566R_mhIBWDzpAbig" onClick={click}>
+          <a target="_blank" href="/" onClick={click}>
             <FaSoundcloud className="text-egg text-4xl  hover:scale-110 transition" />
           </a>
 
